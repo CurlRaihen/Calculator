@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="295.0" maxWidth="229.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="229.0" style="-fx-max-height: 310; -fx-max-width: 232; -fx-background-radius: 100; -fx-border-radius: 100;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculator.Controller">
+   <children>
+      <Label fx:id="lbl" alignment="CENTER_RIGHT" contentDisplay="BOTTOM" prefHeight="62.0" prefWidth="229.0" style="-fx-background-color: #313131;" text="0" textAlignment="JUSTIFY" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Helvetica Light" size="46.0" />
+         </font>
+         <padding>
+            <Insets bottom="-5.0" right="15.0" />
+         </padding>
+      </Label>
+      <Button fx:id="acButton" layoutY="58.0" mnemonicParsing="false" onAction="#onClickOperation" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="49.0" prefWidth="58.0" style="-fx-background-color: #505050; -fx-border-color: #313131;" text="AC" textFill="WHITE">
+         <font>
+            <Font name="Helvetica" size="19.0" />
+         </font></Button>
+      <Button layoutX="57.0" layoutY="58.0" mnemonicParsing="false" onAction="#onClickOperation" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="49.0" prefWidth="58.0" style="-fx-background-color: #505050; -fx-border-color: #313131;" text="+/-" textFill="WHITE">
+         <font>
+            <Font name="Apple Braille Outline 6 Dot" size="19.0" />
+         </font></Button>
+      <Button layoutX="114.0" layoutY="58.0" mnemonicParsing="false" onAction="#onPercentageBtn" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="49.0" prefWidth="58.0" style="-fx-background-color: #505050; -fx-border-color: #313131;" text="\%" textFill="WHITE">
+         <font>
+            <Font name="Apple Braille Outline 6 Dot" size="22.0" />
+         </font></Button>
+      <Button layoutX="171.0" layoutY="58.0" mnemonicParsing="false" onAction="#onClickOperation" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="49.0" prefWidth="58.0" style="-fx-background-color: #ff9500; -fx-border-color: #313131;" text="÷" textFill="WHITE">
+         <font>
+            <Font name="Apple Braille Outline 6 Dot" size="24.0" />
+         </font></Button>
+      <Button layoutX="171.0" layoutY="105.0" mnemonicParsing="false" onAction="#onClickOperation" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="49.0" prefWidth="58.0" style="-fx-background-color: #ff9500; -fx-border-color: #313131;" text="×" textFill="WHITE">
+         <font>
+            <Font name="Apple Braille Outline 6 Dot" size="24.0" />
+         </font></Button>
+      <Button layoutX="114.0" layoutY="105.0" mnemonicParsing="false" onAction="#onClickNumber" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="49.0" prefWidth="58.0" style="-fx-background-color: #605f5f; -fx-border-color: #313131;" text="9" textFill="WHITE">
+         <font>
+            <Font name="Helvetica" size="19.0" />
+         </font></Button>
+      <Button layoutX="57.0" layoutY="105.0" mnemonicParsing="false" onAction="#onClickNumber" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="49.0" prefWidth="58.0" style="-fx-background-color: #605f5f; -fx-border-color: #313131;" text="8" textFill="WHITE">
+         <font>
+            <Font name="Helvetica" size="19.0" />
+         </font></Button>
+      <Button layoutY="105.0" mnemonicParsing="false" onAction="#onClickNumber" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="49.0" prefWidth="58.0" style="-fx-background-color: #605f5f; -fx-border-color: #313131;" text="7" textFill="WHITE">
+         <font>
+            <Font name="Helvetica" size="19.0" />
+         </font></Button>
+      <Button layoutX="171.0" layoutY="152.0" mnemonicParsing="false" onAction="#onClickOperation" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="48.0" prefWidth="58.0" style="-fx-background-color: #ff9500; -fx-border-color: #313131;" text="-" textFill="WHITE">
+         <font>
+            <Font name="Apple Braille Outline 6 Dot" size="24.0" />
+         </font></Button>
+      <Button layoutX="114.0" layoutY="152.0" mnemonicParsing="false" onAction="#onClickNumber" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="49.0" prefWidth="58.0" style="-fx-background-color: #605f5f; -fx-border-color: #313131;" text="6" textFill="WHITE">
+         <font>
+            <Font name="Helvetica" size="19.0" />
+         </font></Button>
+      <Button layoutX="57.0" layoutY="152.0" mnemonicParsing="false" onAction="#onClickNumber" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="49.0" prefWidth="58.0" style="-fx-background-color: #605f5f; -fx-border-color: #313131;" text="5" textFill="WHITE">
+         <font>
+            <Font name="Helvetica" size="19.0" />
+         </font></Button>
+      <Button layoutY="152.0" mnemonicParsing="false" onAction="#onClickNumber" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="49.0" prefWidth="58.0" style="-fx-background-color: #605f5f; -fx-border-color: #313131;" text="4" textFill="WHITE">
+         <font>
+            <Font name="Helvetica" size="19.0" />
+         </font></Button>
+      <Button layoutY="199.0" mnemonicParsing="false" onAction="#onClickNumber" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="49.0" prefWidth="58.0" style="-fx-background-color: #605f5f; -fx-border-color: #313131;" text="1" textFill="WHITE">
+         <font>
+            <Font name="Helvetica" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="57.0" layoutY="199.0" mnemonicParsing="false" onAction="#onClickNumber" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="49.0" prefWidth="58.0" style="-fx-background-color: #605f5f; -fx-border-color: #313131;" text="2" textFill="WHITE">
+         <font>
+            <Font name="Helvetica" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="114.0" layoutY="199.0" mnemonicParsing="false" onAction="#onClickNumber" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="49.0" prefWidth="58.0" style="-fx-background-color: #605f5f; -fx-border-color: #313131;" text="3" textFill="WHITE">
+         <font>
+            <Font name="Helvetica" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="171.0" layoutY="199.0" maxHeight="50.0" maxWidth="58.0" mnemonicParsing="false" onAction="#onClickOperation" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="48.0" prefWidth="58.0" style="-fx-background-color: #ff9500; -fx-border-color: #313131;" text="+" textFill="WHITE">
+         <font>
+            <Font name="Apple Braille Outline 6 Dot" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutY="246.0" mnemonicParsing="false" onAction="#onClickNumber" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="49.0" prefWidth="116.0" style="-fx-background-color: #605f5f; -fx-border-color: #313131;" text="0" textFill="WHITE">
+         <font>
+            <Font name="Helvetica" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="114.0" layoutY="246.0" mnemonicParsing="false" onAction="#onClickOperation" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="49.0" prefWidth="58.0" style="-fx-background-color: #605f5f; -fx-border-color: #313131;" text="." textFill="WHITE">
+         <font>
+            <Font name="Apple Braille Outline 6 Dot" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="171.0" layoutY="246.0" mnemonicParsing="false" onAction="#onClickEqualSign" onMousePressed="#onMousePressed" onMouseReleased="#onMouseReleased" prefHeight="49.0" prefWidth="58.0" style="-fx-background-color: #ff9500; -fx-border-color: #313131;" text="=" textFill="WHITE">
+         <font>
+            <Font name="Apple Braille Outline 6 Dot" size="23.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
